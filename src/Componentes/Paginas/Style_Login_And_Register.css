@@ -35,7 +35,7 @@ main {
     position: relative;
 }
 
-/* Caja trasera de los Formularions */
+/* Caja trasera de los Formularios */
 .caja__trasera {
     width: 140%;
     padding: 10px 20px;
@@ -166,6 +166,7 @@ main {
     display: none;
     width: 100%;
 }
+
 
 /* Responsive design */
 @media screen and (max-width: 850px) {
