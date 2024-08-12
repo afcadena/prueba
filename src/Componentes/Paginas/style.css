@@ -180,42 +180,38 @@ h3{
 }
 
 
-.home{
+.home {
     display: flex;
     align-items: center;
     min-height: 100vh;
     background-image: url('../img/wall_page-0001.jpg');
     background-size: cover;
     background-position: center;
-}
-
-
-.home .content{
+  }
+  
+  .home .content {
     max-width: 60rem;
-}
-
-
-.content h3{
+    margin: 0 auto; /* added margin: 0 auto to center the content */
+  }
+  
+  .content h3 {
     font-size: 6rem;
     color: #333;
-}
-
-
-.content span{
+  }
+  
+  .content span {
     font-size: 3.5rem;
     color: var(--brown);
     padding: 1rem 0;
     line-height: 1.5;
-}
-
-
-.content p{
+  }
+  
+  .content p {
     font-size: 1.5rem;
     color: #000000;
     padding: 1rem 0;
     line-height: 1.5;
-}
-
+  }
 
 .oferts{
     padding: 100px 0;
@@ -246,21 +242,20 @@ h3{
 }
 
 
-.products .box-container{
+.products .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-}
+  }
 
 
-.products .box-container .box{
+  .products .box-container .box {
     flex: 1 1 30rem;
-    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
-    border-radius: .5rem;
-    border: 1rem solid rgba(0, 0, 0, .1);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    border: 1rem solid rgba(0, 0, 0, 0.1);
     position: relative;
-}
-
+  }
 
 .products .box-container .box .discount{
     position: absolute;
@@ -274,23 +269,53 @@ h3{
 }
 
 
-.products .box-container .box .image{
+.products .box-container .box .image {
     position: relative;
     text-align: center;
     padding-top: 2rem;
     overflow: hidden;
-}
+  }
 
 
-.products .box-container .box .image img{
+  .products .box-container .box .image img {
     height: 25rem;
-}
+  }
+  /* Asegúrate de que las imágenes y videos sean visibles */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Verifica el contenedor del mapa */
+  .mapa-section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .mapa iframe {
+    border: none;
+  }
+  
+  /* Asegúrate de que los elementos tengan un tamaño adecuado */
+  .box-container, .icons-container, .footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  
+  .box {
+    flex: 1;
+    min-width: 200px;
+  }
+  
 
 
-.products .box-container .box:hover .image img{
+  .products .box-container .box:hover .image img {
     transform: scale(1.1);
-}
-
+  }
+  
 
 .products .box-container .box .image .icons{
     position: absolute;
@@ -700,7 +725,54 @@ h3{
 
 
 }
+.home {
+    padding: 1rem 5%;
+}
 
+.home .content h3 {
+    font-size: 4rem;
+}
+
+.home .content span {
+    font-size: 2.5rem;
+}
+
+.home .content p {
+    font-size: 1.3rem;
+}
+
+.products .box-container .box {
+    flex: 1 1 25rem;
+}
+
+.products .box-container .box .content h3 {
+    font-size: 2rem;
+}
+
+.products .box-container .box .content .price {
+    font-size: 2rem;
+}
+
+.products .box-container .box .content .price span {
+    font-size: 1.3rem;
+}
+
+.oferts {
+    padding: 80px 0;
+    justify-content: space-around;
+}
+
+.ofert-1 {
+    flex-basis: calc(30% - 15px);
+}
+
+.icons-container {
+    padding: 1rem 5%;
+}
+
+.footer {
+    padding: 1rem 5%;
+}
 
 @media (max-width:450px){
 
